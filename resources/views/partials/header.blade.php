@@ -1,4 +1,8 @@
+@php 
 
+    $navbar = config('menus.navbar');
+
+@endphp
 
 <header>
         <div class="container cont-header">
@@ -7,18 +11,11 @@
             </div>
             <nav>
                 <ul>
+                    @foreach($navbar as $item)
                     <li>
-                        <a href="#">CIAO</a>
+                        <a href="{{ $item['href'] }}">{{ $item['name'] }}</a>
                     </li>
-                    <li>
-                        <a href="#">CIAO</a>
-                    </li>
-                    <li>
-                        <a href="#">CIAO</a>
-                    </li>
-                    <li>
-                        <a href="#">CIAO</a>
-                    </li>
+                    @endforeach
                 </ul>
             </nav>
         </div>
