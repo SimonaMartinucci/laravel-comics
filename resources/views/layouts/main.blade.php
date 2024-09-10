@@ -9,7 +9,8 @@
 </head>
 <body>
 
-<h1>PROVA</h1>
+    @include('partials.header')
+
     
 </body>
 </html>
