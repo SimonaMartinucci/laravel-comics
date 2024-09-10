@@ -1,0 +1,29 @@
+.up_foot_cont {
+    background-image: url(/resources/img/dc-logo-bg.png), url(/resources/img/footer-bg.jpg);
+    background-size: 30%, cover;
+    background-position-x: 75%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
+    .container {
+        display: flex;
+        gap: 40px;
+        padding: 25px 0;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px
+        }
+
+        ul {
+            list-style-type: none;
+
+            li a {
+                font-size: 12px;
+                color: rgb(197, 196, 196);
+            }
+        }
+    }
+}

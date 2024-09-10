@@ -1,0 +1,47 @@
+.low_foot_cont {
+    background-color: $light_gray;
+    height: 100px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .sign {
+            align-content: center;
+
+            a {
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 10px;
+                border: 3px solid $light_blue;
+            }
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a {
+                color: $light_blue;
+                font-size: 16px;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+
+            .icons {
+                width: 30px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .icons:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

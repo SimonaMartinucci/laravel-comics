@@ -14,6 +14,12 @@
     @include('partials.jumbo')
 
     @include('partials.products')
+
+    @include('partials.merch')
     
+    @include('partials.upper_footer')
+
+    @include('partials.lower_footer')
+
 </body>
 </html>
