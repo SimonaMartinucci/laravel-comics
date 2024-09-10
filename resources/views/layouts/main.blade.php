@@ -13,7 +13,7 @@
 
     @include('partials.jumbo')
 
-    @include('partials.products')
+    @yield('content')
 
     @include('partials.merch')
     

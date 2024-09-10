@@ -5,6 +5,7 @@ $products = config('products');
 @endphp
 
 <div class="content-cont">
+    <h2>{{ strtoupper(Route::currentRouteName()) }}</h2>
     <div class="small_container">
         @foreach($products as $product)
         <div class="card">

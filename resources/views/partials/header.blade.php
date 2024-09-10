@@ -7,13 +7,15 @@
 <header>
         <div class="container cont-header">
             <div class="header-logo">
-                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
+                <a href="{{ route('main') }}">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
+                </a>
             </div>
             <nav>
                 <ul>
                     @foreach($navbar as $item)
                     <li>
-                        <a href="{{ $item['href'] }}">{{ $item['name'] }}</a>
+                        <a class="{{ Route::currentRouteName() === $item['href'] ? 'active' : '' }}" href="{{ $item['href'] }}">{{ $item['name'] }}</a>
                     </li>
                     @endforeach
                 </ul>
